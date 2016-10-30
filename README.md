@@ -1,8 +1,7 @@
 ##iOS  SDK 集成指南
 
-```
 注：本文为FitCloud iOS终端SDK的新手使用教程，只涉及教授SDK的使用方法，默认读者已经熟悉XCode开发工具的基本使用方法，以及具有一定的编程知识基础等。
-```
+
 ---
 ####1、SDK功能介绍
 
@@ -38,15 +37,16 @@
 
 ---
 ####2、SDK文件资源介绍
->libFitCloud.a // 库文件
-    FCConstants.h // 通知定义文件
-    FCDefine.h // 类型定义
-    FCObject.h // 对象模型
-    FitCloud.h // sdk核心文件
+> libFitCloud.a // 库文件
+> FCConstants.h // 通知定义文件
+> FCDefine.h // 类型定义
+> FCObject.h // 对象模型
+> FitCloud.h // sdk核心文件
    
  ---
 ####3、SDK资源下载地址   
 >  [sdk下载地址](https://github.com/myz1104/FitCloud-SDK.git)
+
 >  [demo下载地址](https://github.com/myz1104/FCDemo.git)
 
 ---
