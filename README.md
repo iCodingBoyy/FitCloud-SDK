@@ -58,12 +58,12 @@
 1.在XCode中建立你的工程。
 
 2.将SDK文件中包含的 libFitCloud.a，FCConstants.h，FCDefine.h，FCObject.h，FitCloud.h  几个文件添加到你所建的工程中（如果只是把库文件放到工程文件夹内而没有把库文件导入工程，请设置库文件和头文件的搜索路径，如下图）
-![Alt text](http://p1.bqimg.com/1949/cd775744c0cf1ba8.png)
+![Alt text](http://p1.bqimg.com/1949/6dde697bfc40636b.png)
 
 3.SDK使用了蓝牙功能，需要在工程中链接上CoreBluetooth.framework。
 
 4.蓝牙需要后台同步，请设置背后模式
-![Alt text](http://p1.bqimg.com/1949/6dde697bfc40636b.png)
+![Alt text](http://p1.bqimg.com/1949/cd775744c0cf1ba8.png)
 
 ---
 ####5、使用SDK文件包进行APP开发
