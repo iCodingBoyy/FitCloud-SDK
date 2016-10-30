@@ -38,9 +38,13 @@
 ---
 ####2、SDK文件资源介绍
 > libFitCloud.a // 库文件
+
 > FCConstants.h // 通知定义文件
+
 > FCDefine.h // 类型定义
+
 > FCObject.h // 对象模型
+
 > FitCloud.h // sdk核心文件
    
  ---
@@ -52,10 +56,12 @@
 ---
 ####4、搭建开发环境
 1.在XCode中建立你的工程。
+
 2.将SDK文件中包含的 libFitCloud.a，FCConstants.h，FCDefine.h，FCObject.h，FitCloud.h  几个文件添加到你所建的工程中（如果只是把库文件放到工程文件夹内而没有把库文件导入工程，请设置库文件和头文件的搜索路径，如下图）
 ![Alt text](./1477239550265.png)
 
 3.SDK使用了蓝牙功能，需要在工程中链接上CoreBluetooth.framework。
+
 4.蓝牙需要后台同步，请设置背后模式
 ![Alt text](./1477239815179.png)
 
