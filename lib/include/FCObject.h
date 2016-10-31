@@ -10,6 +10,57 @@
 
 #import <Foundation/Foundation.h>
 
+#pragma mark - FCAlarmCycleModel
+
+/*!
+ * @class FCAlarmCycleModel
+ * @discussion The alarm clock cycle data model
+ */
+
+@interface FCAlarmCycleModel : NSObject
+/*!
+ * @property monday
+ */
+@property (nonatomic, assign) BOOL monday;
+/*!
+ * @property tuesday
+ */
+@property (nonatomic, assign) BOOL tuesday;
+/*!
+ * @property wednesday
+ */
+@property (nonatomic, assign) BOOL wednesday;
+/*!
+ * @property thursday
+ */
+@property (nonatomic, assign) BOOL thursday;
+/*!
+ * @property firday
+ */
+@property (nonatomic, assign) BOOL firday;
+/*!
+ * @property saturday
+ */
+@property (nonatomic, assign) BOOL saturday;
+/*!
+ * @property sunday
+ */
+@property (nonatomic, assign) BOOL sunday;
+
+/*!
+ * @brief instantiate an model with the given data
+ * @param cycle The alarm clock cycle
+ * @return  an alarm clock cycle model of <code>FCAlarmCycleModel</code> object
+ */
++ (instancetype)modelWithCycle:(NSNumber*)cycle;
+
+/*!
+ * @brief The alarm clock cycle (7bits).From low to high indicates Monday to Sunday.All bits are 0, indicating that the day is valid
+ * @return alarm clock cycle value
+ */
+- (NSNumber*)cycleValue;
+@end
+
 #pragma mark - FCAlarmModel
 
 /*!
@@ -58,6 +109,7 @@
  */
 @property (nonatomic, strong) NSNumber *cycle;
 
+- (NSString*)workTime;
 /*!
  * @brief Convert the alarm clock model to NSData
  * @return The converted data
