@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "FCConstants.h"
-#import "FCDefine.h"
+#import "FCDataHandler.h"
+#import "FCObject.h"
 
 
 /*!
@@ -310,6 +311,7 @@
                dataHandler:(FCSyncDataHandler)dataHandler
                 retHandler:(FCSyncResultHandler)retHandler;
 
+
 /*!
  * @method fcCloseRealTimeSync:
  * @brief Turn off healthy real-time synchronization
@@ -320,6 +322,7 @@
 
 
 #pragma mark - 历史数据同步
+
 /*!
  * @method fcGetHistoryData:dataHandler:retHandler:
  * @brief Synchronize historical motion data
@@ -334,7 +337,6 @@
 
 
 #pragma mark - 固件升级
-
 
 /*!
  * @method fcGetFirmwareVersion:retHandler:

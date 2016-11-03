@@ -115,25 +115,25 @@ typedef NS_ENUM(NSInteger, FCRTSyncType)
 typedef NS_ENUM(NSInteger, FCSyncResponseState) {
 
     /*! The default type*/
-    FCSyncResponseStateNone,
+    FCSyncResponseStateNone = 0,
     /*! Bluetooth is poweroff*/
-    FCSyncResponseStatePowerOff,
+    FCSyncResponseStatePowerOff = 1,
     /*! Bluetooth is not connected*/
-    FCSyncResponseStateNotConnected,
+    FCSyncResponseStateNotConnected = 2,
     /*! Bluetooth disconnected*/
-    FCSyncResponseStateDisconnect,
+    FCSyncResponseStateDisconnect = 3,
     /*! Parameter error*/
-    FCSyncResponseStateParameterError,
+    FCSyncResponseStateParameterError = 4,
     /*! Synchronizing data*/
-    FCSyncResponseStateSyncing,
+    FCSyncResponseStateSyncing = 5,
     /*! Synchronization succeeded*/
-    FCSyncResponseStateSuccess,
+    FCSyncResponseStateSuccess = 6,
     /*! Synchronization failed*/
-    FCSyncResponseStateError,
+    FCSyncResponseStateError = 7,
     /*! Synchronization timeout*/
-    FCSyncResponseStateTimeOut,
+    FCSyncResponseStateTimeOut = 8,
     /*! Healthy real-time synchronization timeout*/
-    FCSyncResponseStateRTTimeOut,
+    FCSyncResponseStateRTTimeOut = 9,
 };
 
 
