@@ -90,16 +90,23 @@
 /*!
  * @brief Connect a peripheral
  * @param peripheral A peripheral to connect to
+ * @return Whether the peripheral in connection mode
  */
-- (void)connectPeripheral:(CBPeripheral*)peripheral;
+- (BOOL)connectPeripheral:(CBPeripheral*)peripheral;
 
 
 /*!
  * @brief Disconnect the peripheral
  * @param peripheral A peripheral to be disconnected
+ * @return Whether the peripheral in disconnected mode
  */
-- (void)disconnectPeripheral:(CBPeripheral*)peripheral;
+- (BOOL)disconnectPeripheral:(CBPeripheral*)peripheral;
 
+/*!
+ * @brief Disconnect the current peripheral
+ * @return Whether the current peripheral in disconnected mode
+ */
+- (BOOL)disconnect;
 
 #pragma mark - 控制监听
 
