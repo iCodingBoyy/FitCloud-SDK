@@ -88,6 +88,12 @@
 
 
 /*!
+ * @brief The result of the connection
+ * @return Whether the peripheral has been connected
+ */
+- (BOOL)isConnected;
+
+/*!
  * @brief Connect a peripheral
  * @param peripheral A peripheral to connect to
  * @return Whether the peripheral in connection mode
