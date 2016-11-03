@@ -61,6 +61,8 @@
 - (NSNumber*)cycleValue;
 @end
 
+
+
 #pragma mark - FCAlarmModel
 
 /*!

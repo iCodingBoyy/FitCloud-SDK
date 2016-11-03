@@ -85,6 +85,8 @@ typedef NS_ENUM(NSInteger, FCSyncType) {
     FCSyncTypeFirmwareUpgrade = 49,
     /*! Firmware version*/
     FCSyncTypeFirmwareVersion = 50,
+    /*! Found my cell phone.*/
+    FCSyncTypeFoundMyCellPhone = 51,
     /*! Finished*/
     FCSyncTypeEnd = 100,
 };

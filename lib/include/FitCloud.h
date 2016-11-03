@@ -116,7 +116,11 @@
  */
 - (void)fcFindWristband:(FCSyncResultHandler)retHandler;
 
-
+/*!
+ * @discussion When the phone received a command issued by the watch,it needs to send a reply to the watch.
+ * @param retHandler Synchronous result callback
+ */
+- (void)fcFoundMyCellPhone:(FCSyncResultHandler)retHandler;
 
 #pragma mark - 手表登录、绑定或解绑操作
 /*!
